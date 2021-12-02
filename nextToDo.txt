@@ -1,0 +1,11 @@
+1.Routing/ Sub routing
+***ADD HOVER EFFECT ON LINKS AND BUTTONS***
+***USE REDUX***
+*** to creat a triangle follow these steps in this link--->https://css-tricks.com/snippets/css/css-triangle/  ******
+2.custom design on select feilds options
+3.ROTATE A SVG IN A ONCLICK EVENT
+4.PERS MGT PAGE 
+5.MULTISTAGE FORM**
+
+
+import { ReactComponent as PlusIcon } from "../../img/plusIcon.svg";

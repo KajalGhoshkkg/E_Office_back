@@ -1,0 +1,26 @@
+.personalMgtPage_container_potioner{
+    margin: 50px 70px 0px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.personalMgtPage_container{
+    width: 840px;
+    flex-wrap: wrap;
+}
+.personalMgtPage_container_btns{
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.personalMgtPage_container_btns a > button{
+    width: 260px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    padding: 30px 40px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 3px solid #F1F1F3;
+    cursor: pointer;
+}

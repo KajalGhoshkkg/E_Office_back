@@ -1,0 +1,88 @@
+
+.personalInfo_container{
+    flex-direction: column;
+}
+.personalInfo_container >p{
+    font-size: 16px;
+    color: #333;
+    padding: 10px 0px;
+}
+.personalPage_form{
+    flex-wrap: wrap;
+}
+
+
+/* input fields css */
+.personalInfo_text-field {
+    position: relative;
+    margin: 5px 2.5px 5px 2.5px;
+  }
+  .personalInfo_text-field >input {
+    width: 300px;
+    display: inline-block;
+    border: thin solid #fafafa;
+    color: #444;
+    background-color: #f5f5f5;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+  }
+  .personalInfo_text-field >input:focus {
+    background-color: #fff;
+    outline-color: #0091ea;
+  }
+  .personalInfo_text-field >label {
+    color: #999;
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 10px;
+    transition: 0.2s;
+  }
+  .personalInfo_text-field >input:focus ~ label,
+  .personalInfo_text-field >input:valid ~ label {
+    top: -10px;
+    left: 15px;
+    font-size: small;
+    color: #0091ea;
+    background-color: #fff;
+    padding: 0 5px 0 5px;
+  }
+  /* this part is por the animated input fields--> end*/
+
+  /* textarea fields css */
+.personalInfo_textarea-field {
+    position: relative;
+    margin: 10px 2.5px 10px 2.5px;
+  }
+  .personalInfo_textarea-field >textarea {
+    width: 300px;
+    display: inline-block;
+    border: thin solid #fafafa;
+    color: #444;
+    background-color: #f5f5f5;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    resize: none;
+  }
+  .personalInfo_textarea-field >textarea:focus {
+    background-color: #fff;
+    outline-color: #0091ea;
+  }
+  .personalInfo_textarea-field >label {
+    color: #999;
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 10px;
+    transition: 0.2s;
+  }
+  .personalInfo_textarea-field >textarea:focus ~ label,
+  .personalInfo_textarea-field >textarea:valid ~ label {
+    top: -10px;
+    left: 15px;
+    font-size: small;
+    color: #0091ea;
+    background-color: #fff;
+    padding: 0 5px 0 5px;
+  }
+  /* this part is por the animated textarea fields--> end*/

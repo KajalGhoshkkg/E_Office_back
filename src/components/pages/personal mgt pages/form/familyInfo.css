@@ -1,0 +1,18 @@
+.familyInfo_container >p{
+    font-size: 18px;
+    padding: 10px 0px;
+}
+.maritual_status >p{
+    font-size: 18px;
+    padding: 8px 15px 8px 0px;
+}
+.maritual_status div > input{
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+.maritual_status div > label{
+    /* width: 20px;
+    height: 20px; */
+    margin-right: 25px;
+}

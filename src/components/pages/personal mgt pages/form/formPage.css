@@ -1,0 +1,109 @@
+.multiStepForm_page_potioner{
+  margin: 15px;
+}
+.multiStepForm_container {
+  position: relative;
+  width: 1000px;
+  height: 560px;
+  padding: 0px 20px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.multiStepForm_title {
+  border-bottom: 2px solid #f5f5f7;
+}
+.multiStepForm_title > p {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bolder;
+  padding: 10px;
+}
+.multiStepForm_mainBody_leftPart {
+  width: 300px;
+  padding: 8px 15px;
+  color: #595959;
+  border-right: 2px solid #f5f5f7;
+}
+.multiStepForm_mainBody_leftPart_header {
+  padding: 10px 0px;
+  font-size: 18px;
+}
+.multiStepForm_mainBody_leftPart_stepsCount {
+  flex-direction: column;
+
+}
+.multiStepForm_mainBody_leftPart_stepsCount > p {
+  padding: 15px 10px;
+}
+.multiStepForm_mainBody_leftPart_stepsCount p > svg{
+    margin-right: 10px;
+}
+.multiStepForm_mainBody_leftPart_stepsCount .activeSpanborder {
+  margin-right: 10px;
+  text-align: center;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding-bottom: 10px;
+  border: 2px solid #333;
+  text-align: center;
+  border-radius: 50%;
+}
+.savedPTagCss{
+    color: #333;
+    font-weight: bolder;
+}
+.activeSpanColor {
+  color: #00b0ff;
+}
+.activeSpanColor> svg{
+    margin-right: 10px;
+}
+.activeSpanColor >.activeSpanborder {
+  border-color: #00b0ff;
+}
+.multiStepForm_mainBody_leftPart_footer {
+ position: absolute;
+ bottom: 50px; 
+}
+.multiStepForm_mainBody_leftPart_footer > svg {
+  margin-right: 8px;
+}
+.multiStepForm_mainBody_rightpart {
+  padding: 8px 30px;
+  width: 750px;
+}
+.multiStepForm_mainBody_rightpart_buttonPart{
+    position: absolute;
+    right: 0px;
+    margin-right: 55px;
+    margin-top: -40px;
+}
+.formPage_saveBtn {
+  font-size: 18px;
+  color: #fff;
+  background-color: #00b0ff;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  padding: 8px 15px;
+}
+.formPage_prevBtn {
+  font-size: 18px;
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #f5f5f7;
+  border-radius: 10px 0px 0px 10px;
+  cursor: pointer;
+  padding: 8px 15px;
+  margin-right: 2px;
+}
+.formPage_nextBtn {
+  font-size: 18px;
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #f5f5f7;
+  border-radius: 0px 10px 10px 0px;
+  cursor: pointer;
+  padding: 8px 15px;
+}

@@ -1,0 +1,43 @@
+.familyUnmarried_container{
+    flex-wrap: wrap;
+}
+
+
+
+
+/* input fields css */
+.familyUnmarriedInfo_text-field {
+    position: relative;
+    margin: 10px 2.5px 10px 2.5px;
+  }
+  .familyUnmarriedInfo_text-field >input {
+    width: 300px;
+    display: inline-block;
+    border: thin solid #fafafa;
+    color: #444;
+    background-color: #f5f5f5;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+  }
+  .familyUnmarriedInfo_text-field >input:focus {
+    background-color: #fff;
+    outline-color: #0091ea;
+  }
+  .familyUnmarriedInfo_text-field >label {
+    color: #999;
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 10px;
+    transition: 0.2s;
+  }
+  .familyUnmarriedInfo_text-field >input:focus ~ label,
+  .familyUnmarriedInfo_text-field >input:valid ~ label {
+    top: -10px;
+    left: 15px;
+    font-size: small;
+    color: #0091ea;
+    background-color: #fff;
+    padding: 0 5px 0 5px;
+  }
+  /* this part is por the animated input fields--> end*/
