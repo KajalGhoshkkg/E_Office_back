@@ -1,9 +1,42 @@
 const userModel = require("../model/userModel");
 
 const jwt = require("jsonwebtoken");
+const { base } = require("../model/userModel");
 
 const token = (id) => {
   return jwt.sign({ id }, process.env.key, { expiresIn: process.env.exp });
+};
+
+//for creating admin purpose
+exports.createAdmin = async (req, res) => {
+  const { userName, password, confirmPassword, base } = req.body;
+  const role = "admin";
+  if (!userName || !password || !confirmPassword || !base) {
+    res.status(200).json({
+      msg: "all the fields are required",
+    });
+  }
+  if (password.length < 8) {
+    res.status(200).json({
+      msg: "password must be of atleast 8 charecter or above",
+    });
+  }
+  if (password !== confirmPassword) {
+    res.status(200).json({
+      msg: "password and confirmPassword mismatch",
+    });
+  }
+  const adminSignupData = await userModel.create({
+    userName: userName,
+    password: password,
+    confirmPassword: confirmPassword,
+    base: base,
+    role: role,
+  });
+  res.status(200).json({
+    msg: "admin signup data subitted successfully",
+    adminSignupData,
+  });
 };
 
 //for sign-up purpose

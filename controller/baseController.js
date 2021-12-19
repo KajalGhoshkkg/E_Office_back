@@ -65,7 +65,7 @@ exports.updateBaseDetails = async (req, res) => {
     });
   }
   res.status(200).json({
-    msg: "contact data updated successfully",
+    msg: "base data updated successfully",
     updateBaseData,
   });
 };

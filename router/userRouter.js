@@ -8,6 +8,7 @@ const {
   authCheck,
   logout,
   getUserDetails,
+  createAdmin,
 } = require("../controller/userController");
 
 const { protect, restrictedTo } = require("../controller/userController");
@@ -15,8 +16,14 @@ const { protect, restrictedTo } = require("../controller/userController");
 const UserRoute = express.Router();
 
 UserRoute.post("/signup", signup);
+UserRoute.post(
+  "/createadmin",
+  createAdmin,
+  protect,
+  restrictedTo("superadmin")
+);
 UserRoute.post("/login", login);
-UserRoute.get('/userdetails',getUserDetails)
+UserRoute.get("/userdetails", protect, getUserDetails);
 UserRoute.post("/logout", logout);
 // UserRoute.post("/protect", protect);
 UserRoute.delete(
